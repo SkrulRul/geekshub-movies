@@ -1,0 +1,25 @@
+.footerDesign {
+    height: 4vh;
+    width: 100%;
+    background-color: lightcyan;
+    font-weight: bold;
+    color: chocolate;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerText {
+    font-size: 20px;
+    font-weight: bold;
+    color: chocolate;
+    font-weight: bold;
+}
+
+.footerIcon {
+    height: 80%;
+    width: 2%;
+    margin: 2em;
+}

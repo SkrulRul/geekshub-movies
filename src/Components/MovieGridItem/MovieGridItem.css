@@ -1,0 +1,25 @@
+.movieDesign {
+    height: 15em;
+    width: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.movieDesign:hover{
+    transition: 0.5s;
+    color: chocolate
+}
+
+.movieDesign:hover .moviePoster{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, chocolate 0px 0px 0px 3px;
+}
+
+.moviePoster {
+    height: 8em;
+    margin-top: 1em;
+    padding: 5px;
+}

@@ -1,0 +1,24 @@
+.moviesDesign {
+    height: auto;
+    width: 100%;
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.gridSide {
+    min-height:50em; 
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.detailSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}

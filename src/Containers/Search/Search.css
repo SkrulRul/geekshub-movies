@@ -1,0 +1,42 @@
+.searchDesign {
+    height: auto;
+    width: 100%;
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.gridDesign {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.seachSide {
+    width: 50%;
+    min-height:50em; 
+}
+
+.detailSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.searchBar {
+    margin: 2em;
+    width: 90%;
+    border: 3px solid #00B4CC;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+
+  .searchLogo {
+    width: 100%;
+    margin: 10em;
+  } 

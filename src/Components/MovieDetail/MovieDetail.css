@@ -1,0 +1,42 @@
+.movieDetailDesign {
+    height: auto;
+    width: 100%;
+    min-height:50em; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightcyan;
+    border-radius: 1em;
+    color: black;
+    padding: 1em;
+    margin: 3em;
+}
+
+.emptyDetail {
+    height: 50em;
+    width: 100%;
+    background-color: lightcyan;
+    border-radius: 1em;
+    margin: 3em;
+}
+
+.detailPoster {
+    height: 30em;
+    margin-top: 2em;
+}
+
+.detailTitle {
+    color: Chocolate;
+    text-decoration: underline;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.details {
+    width: 50%;
+    font-size: 1em;
+    text-align: left;
+    margin-top: 5px;
+}

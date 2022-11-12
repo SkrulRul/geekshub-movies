@@ -1,0 +1,46 @@
+.headerDesign {
+    height: 7vh;
+    width: 100%;
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerLinks{
+    width: 20em;
+    display: flex;
+    align-items: center;
+}
+
+.linkDesign {
+    height: 100%;
+    font-weight: bold;
+    color: chocolate;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.linkDesign:hover {
+    color: lightcyan;
+    background-color: chocolate;
+}
+
+.title {
+    width: 20em;
+    margin-left: 1em;
+    display: flex;
+    font-weight: bold;
+    font-size: 40px;
+    align-items: center;    
+    color: chocolate;
+}
+
+.headerIcon {
+    height: 80%;
+    width: 50%;
+}
