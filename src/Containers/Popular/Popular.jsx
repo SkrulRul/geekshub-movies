@@ -24,9 +24,7 @@ const Popular = () => {
             <div className="gridSide">
                 { movies.map(movie => <MovieGridItem onClick={() => setMovieDetails(movie)} key={movie.id} movie={movie}/>)}
             </div>
-            <div className="detailSide">
-                <MovieDetail movie={movieDetails}/>
-            </div>
+            <div className="detailSide">  <MovieDetail movie={movieDetails}/> </div>
         </div>
     )
 };

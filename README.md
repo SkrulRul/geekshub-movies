@@ -14,5 +14,6 @@ The App has two pages:
 ## Run Server
 
 In the project directory, you can use 
-<pre><code>npm start</code></pre>
+<pre><code>npm install
+npm start</code></pre>
 to run the app in the development mode in [http://localhost:3000](http://localhost:3000).

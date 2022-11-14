@@ -11,14 +11,17 @@ const Search = () => {
     const [movieDetails, setMovieDetails] = useState("");
 
     const handleSearch = (input) => {
-        let text = input.target.value
-        if(text === "") setMovies([])
+        setTimeout(() => {
+            let text = input.target.value
+            if(text === "") setMovies([])
+            else if(text.length > 2) seachMovies(text)  
+        }, 500)
+    }
 
-        if(text.length > 2) {
-            searchMovie(text)
-                .then(res => setMovies(res.data.results))
-                .catch(error => console.log(error))
-            }
+    const seachMovies = (text) => {
+        searchMovie(text)
+            .then(res => setMovies(res.data.results))
+            .catch(error => console.log(error))
     }
 
     return (
@@ -28,14 +31,13 @@ const Search = () => {
                 <div className="gridDesign">
                     { movies.length ? 
                         movies.map(movie => <MovieGridItem onClick={() => setMovieDetails(movie)} key={movie.id} movie={movie}/>) :
-                        <img src={Logo} alt="Search" className="searchLogo"/> }
+                        <img src={Logo} alt="Search" className="searchLogo"/> 
+                    }
                 </div>
             </div> 
-                <div className="detailSide">
-                    <MovieDetail movie={movieDetails}/>
-                </div>  
+                <div className="detailSide"> <MovieDetail movie={movieDetails}/> </div>  
         </div>
     )
 }
 
-export default Search;
+export default Search
